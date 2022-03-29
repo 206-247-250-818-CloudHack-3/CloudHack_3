@@ -1,27 +1,25 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
-
+from flask import Flask, render_template, request, flash, redirect
 import requests
 import os
 
 app = Flask(__name__)
 app.secret_key = 'thisisjustarandomstring'
 
-
-def add(n1  , n2):
-    return n1+n2
+def add(n1, n2):
+    return int(requests.get('http://addition:5051/'+str(n1)+'/'+str(n2)).text)
 
 def minus(n1, n2):
-    return n1-n2
+    return n1 - n2
 
 def multiply(n1, n2):
-    return n1*n2
+    return n1 * n2
 
 def divide(n1, n2):
     return n1/n2
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    number_1 = request.form.get("first", type=int)
+    number_1 = request.form.get('first', type=int)
     number_2 = request.form.get('second', type=int)
     operation = request.form.get('operation')
     result = 0

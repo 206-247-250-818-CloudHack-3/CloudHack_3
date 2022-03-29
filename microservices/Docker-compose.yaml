@@ -11,5 +11,15 @@ services:
         aliases:
           - landing-service
   # Add more services below
+  addtition:
+    build: ./addition
+    hostname: addition
+    ports:
+      - 5051
+    networks:
+      sample:
+        aliases:
+          - addition
+
 networks:
   sample:
