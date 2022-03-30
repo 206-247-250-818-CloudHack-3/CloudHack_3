@@ -9,7 +9,8 @@ api = Api(app)
 # Create a class which inherits Resource class from flask_restful
 class Division(Resource):
     def get(self, n1, n2):
-        return int(n1) / int(n2)
+        x = int(n1) / int(n2)
+        return x
 
 
 api.add_resource(Division, '/<int:n1>/<int:n2>')

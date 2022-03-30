@@ -10,6 +10,7 @@ services:
       sample:
         aliases:
           - landing-service
+          
   # Add more services below
   addtition:
     build: ./addition
@@ -41,7 +42,6 @@ services:
         aliases:
           - multiplication
 
-
   division:
     build: ./division
     hostname: division
@@ -51,6 +51,26 @@ services:
       sample:
         aliases:
           - division
+
+  gcd:
+    build: ./gcd
+    hostname: gcd
+    ports:
+      - 5055
+    networks:
+      sample:
+        aliases:
+          - gcd
+
+  lcm:
+    build: ./lcm
+    hostname: lcm
+    ports:
+      - 5056
+    networks:
+      sample:
+        aliases:
+          - lcm
 
 networks:
   sample:
