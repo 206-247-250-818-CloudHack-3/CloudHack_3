@@ -15,7 +15,7 @@ def multiply(n1, n2):
     return int(requests.get('http://multiplication:5053/'+str(n1)+'/'+str(n2)).text)
 
 def divide(n1, n2):
-    return n1/n2
+    return int(requests.get('http://division:5054/'+str(n1)+'/'+str(n2)).text)
 
 @app.route('/', methods=['POST', 'GET'])
 def index():

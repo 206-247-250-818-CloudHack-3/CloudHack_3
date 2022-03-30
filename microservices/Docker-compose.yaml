@@ -41,5 +41,16 @@ services:
         aliases:
           - multiplication
 
+
+  division:
+    build: ./division
+    hostname: division
+    ports:
+      - 5054
+    networks:
+      sample:
+        aliases:
+          - division
+
 networks:
   sample:
