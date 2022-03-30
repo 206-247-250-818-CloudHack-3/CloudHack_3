@@ -19,7 +19,7 @@ def calculate_lcm(x, y):
 
 class lcm(Resource):
     def get(self, num1, num2):
-        return calculate_lcm(num1, num2)
+        return calculate_lcm(int(num1), int(num2))
 
 api.add_resource(lcm, '/<string:num1>/<string:num2>')
 

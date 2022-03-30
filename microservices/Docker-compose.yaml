@@ -71,6 +71,16 @@ services:
       sample:
         aliases:
           - lcm
-
+  
+  exponent:
+      build: ./exponent
+      hostname: exponent
+      ports:
+        - 5057
+      networks:
+        sample:
+          aliases:
+            - exponent
+            
 networks:
   sample:

@@ -12,7 +12,7 @@ class Sub(Resource):
         return int(n1) - int(n2)
 
 
-api.add_resource(Sub, '/<int:n1>/<int:n2>')
+api.add_resource(Sub, '/<string:n1>/<string:n2>')
 if __name__ == '__main__':
     app.run(
         debug=True,
