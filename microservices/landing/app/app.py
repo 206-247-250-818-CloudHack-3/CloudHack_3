@@ -9,10 +9,10 @@ def add(n1, n2):
     return int(requests.get('http://addition:5051/'+str(n1)+'/'+str(n2)).text)
 
 def minus(n1, n2):
-    return n1 - n2
+    return int(requests.get('http://subtraction:5052/'+str(n1)+'/'+str(n2)).text)
 
 def multiply(n1, n2):
-    return n1 * n2
+    return int(requests.get('http://multiplication:5053/'+str(n1)+'/'+str(n2)).text)
 
 def divide(n1, n2):
     return n1/n2
