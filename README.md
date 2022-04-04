@@ -2,12 +2,12 @@
 
 ## Team Details:
 
-| SRN  | Name |
-| ------------- | ------------- |
-| PES1UG19CS250  | Mahesh Kumawat |
-| PES1UG19CS247  | Yasaswini M |
-| PES1UG19CS206  | Rakshitha Kandula |
-| PES1UG20CS818  | Navya |
+| SRN  | Name | Section |
+| ------------- | ------------- | ------------- |
+| PES1UG19CS250  | Mahesh Kumawat | D |
+| PES1UG19CS247  | Yasaswini M | D |
+| PES1UG19CS206  | Rakshitha Kandula | D |
+| PES1UG20CS818  | Navya | D |
 
 <br>
 
